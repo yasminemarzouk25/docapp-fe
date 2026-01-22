@@ -3,9 +3,13 @@ type: kubernetes
 name: ci-pipeline
 
 trigger:
+  event:
+    - push
   branch:
     - dev
-
+  tag:
+    - v[0-9]+.[0-9]+.[0-9]+
+    - v[0-9]+.[0-9]+.[0-9]+-rc*
 
 volumes:
   - name: docker-sock
