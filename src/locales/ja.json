@@ -1,0 +1,538 @@
+{
+  "forms": {
+    "email": {
+      "required": "メールアドレスは必須です",
+      "invalid": "無効なメール形式です"
+    },
+    "addPlaceholder": {
+      "name": {
+        "required": "プレースホルダー名は必須です",
+        "minLength": "プレースホルダー名は少なくとも{{length}}文字でなければなりません",
+        "maxLength": "プレースホルダー名は{{length}}文字を超えてはいけません"
+      }
+    },
+    "editPlaceholder": {
+      "name": {
+        "required": "プレースホルダー名は必須です",
+        "minLength": "プレースホルダー名は少なくとも{{length}}文字でなければなりません",
+        "maxLength": "プレースホルダー名は{{length}}文字を超えてはいけません"
+      }
+    },
+    "addRequest": {
+      "summary": {
+        "required": "概要は必須です",
+        "minLength": "概要は少なくとも{{length}}文字でなければなりません",
+        "maxLength": "概要は{{length}}文字を超えてはいけません"
+      },
+      "description": {
+        "required": "説明は必須です",
+        "minLength": "説明は少なくとも{{length}}文字でなければなりません",
+        "maxLength": "説明は{{length}}文字を超えてはいけません"
+      },
+      "hrHandler": {
+        "required": "このリクエストを人事部門のメンバーに割り当てる必要があります"
+      },
+      "department": {
+        "required": "部門を選択してください",
+        "invalid": "無効な部門が選択されました"
+      },
+      "priority": {
+        "required": "優先度は必須です",
+        "min": "優先度は1以上でなければなりません",
+        "max": "優先度は6以下でなければなりません"
+      },
+      "templateId": {
+        "required": "テンプレートを選択する必要があります"
+      },
+      "signatureType": {
+        "required": "署名の種類は必須です",
+        "invalid": "無効な署名の種類が選択されました"
+      }
+    },
+    "addAdministrativeDocument": {
+      "summary": {
+        "required": "概要は必須です",
+        "minLength": "概要は少なくとも{{length}}文字でなければなりません",
+        "maxLength": "概要は{{length}}文字を超えてはいけません"
+      },
+      "createdFor": {
+        "required": "ユーザーを選択してください"
+      },
+      "department": {
+        "required": "部署を選択してください",
+        "invalid": "無効な部署が選択されました"
+      },
+      "priority": {
+        "required": "優先度は必須です",
+        "min": "優先度は1以上でなければなりません",
+        "max": "優先度は6以下でなければなりません"
+      },
+      "templateId": {
+        "required": "テンプレートを選択する必要があります"
+      }
+    },
+    "languageManagement": {
+      "code": {
+        "required": "言語コードは必須です",
+        "pattern": "無効な言語コード形式です"
+      },
+      "name": {
+        "required": "言語名は必須です",
+        "minLength": "言語名は少なくとも{{length}}文字でなければなりません",
+        "maxLength": "言語名は{{length}}文字を超えてはいけません"
+      }
+    }
+  },
+  "welcome": "ホームページへようこそ",
+  "navbar": {
+    "requests": "リクエスト",
+    "documents": "ドキュメント",
+    "users": "ユーザー",
+    "signers": "署名者",
+    "logout": "ログアウト",
+    "language": "言語"
+  },
+  "sidebar": {
+    "home": "ホーム",
+    "myRequests": "マイリクエスト",
+    "assignedRequests": "割り当てられたリクエスト",
+    "reviewRequests": "レビュー待ちリクエスト",
+    "configureTemplates": "テンプレート設定",
+    "addTemplate": "テンプレート追加",
+    "administrativeDocuments": "管理文書",
+    "placeholders": "プレースホルダー",
+    "languages": "言語",
+    "users": "ユーザー",
+    "signers": "署名者"
+  },
+  "login": {
+    "loginToAccount": "アカウントにログイン",
+    "welcomeMessage": "企業向けソリューションで文書管理ワークフローを効率化。安全で高性能、そしてビジネスニーズに合わせて設計されています。",
+    "accessRestricted": "アクセスはAzure ADメンバーのみに制限されています。",
+    "signInWithMicrosoft": "Microsoftでサインイン",
+    "havingIssues": "問題がありますか？",
+    "contactSupport": "サポートに連絡",
+    "unexpectedError": "ログインプロセス中に予期しないエラーが発生しました。後でもう一度お試しください。問題が解決しない場合は、ブラウザのキャッシュ/データをクリアしてください。"
+  },
+  "addUser": {
+    "firstName": "名",
+    "lastName": "姓",
+    "displayName": "表示名",
+    "email": "Eメール",
+    "mobile": "電話番号",
+    "birthday": "誕生日",
+    "companyName": "会社名",
+    "jobTitle": "職種",
+    "department": "部署",
+    "country": "国",
+    "state": "州",
+    "streetAddress": "住所",
+    "postalCode": "郵便番号",
+    "buttons": {
+      "save": "保存",
+      "update": "更新",
+      "cancel": "キャンセル"
+    },
+    "sections": {
+      "personalInformation": "個人情報",
+      "professionalDetails": "職業的な詳細",
+      "additionalInformation": "追加情報"
+    },
+    "pageTitle": "ユーザー追加",
+    "successMessage": "ユーザーの作成に成功しました"
+  },
+  "addTemplate": {
+    "templateName": "モデル名",
+    "language": "言語",
+    "selectLanguage": "言語を選択",
+    "templateRefNumber": "フォーム参照番号",
+    "uploadFile": "テンプレートのダウンロード",
+    "dragDrop": "ここにファイルをドロップする...",
+    "pageTitle": " フォームの追加",
+    "addedSuccessfully": "テンプレートが正常に追加されました",
+    "employeeRequestable": "従業員がリクエスト可能",
+    "employeeRequestableTooltip": "有効にすると、すべての従業員がこのテンプレートをリクエストできます。無効にすると、人事部のメンバーのみがこのテンプレートからドキュメントを生成できます。",
+    "buttons": {
+      "save": "保存",
+      "validate": "バリデート・ファイル",
+      "reset": "リセット"
+    },
+    "uploadContent": "ここにファイルをドラッグ＆ドロップするか、クリックしてファイルを選択します",
+    "addTemplateConstraints": "ガイドライン: \n - 少なくとも1つのプレースホルダが含まれていなければなりません。\n- プレースホルダは以下のものでなければなりません：\n- 文字(a-z, A-Z)、数字(0-9)、アンダースコア(_)のみ。\n- アンダースコア(_)または数字で始まらない。\n- スペースを含まない。\n- 括弧[]は閉じずに正しく使用する。\n- プレースホルダーは[]内に記述する。",
+    "uploadFileError": "ファイルタイプが無効です。.docx ファイルをアップロードしてください。",
+    "detectedPlaceholders": "検出されたプレースホルダー",
+    "fileIsValid": "ファイルが正常に検証されました。テンプレートを保存できます。"
+  },
+  "workflowProgress": {
+    "created": "リクエストが作成されました",
+    "generated": "人事部のメンバーによって生成された文書",
+    "inReview": "レビュー中",
+    "signed": "文書に署名済み",
+    "scanned": "文書がスキャンされました",
+    "collected": "文書を受け取りました",
+    "review": "レビュー"
+  },
+  "requestModal": {
+    "summary": "概要",
+    "description": "説明",
+    "priority": "優先度",
+    "typeDocument": "文書の種類",
+    "hrHandler": "担当者",
+    "createdFor": "作成者",
+    "status": {
+      "pending": "保留中",
+      "approved": "承認済み",
+      "rejected": "拒否されました"
+    },
+    "signatureType": "署名の種類",
+    "handSignature": "手書きの署名",
+    "digitalSignature": "デジタル署名",
+    "cancelBtn": "キャンセル",
+    "saveBtn": "保存"
+  },
+  "addRequest": {
+    "requestTitle": "リクエストの追加",
+    "editRequestBtn": "リクエストの編集",
+    "department": "部署",
+    "departmentPlaceholder": "部署を選択",
+    "priority": "優先度",
+    "priorityPlaceholder": "優先度を選択",
+    "successMessage": "リクエストは正常に作成されました",
+    "confirmSend": "リクエストを作成すると、変更することはできません。進む前にすべての情報を注意深く確認してください。",
+    "confirmSendTitle": "リクエスト作成の確認",
+    "priorityOptions": {
+      "urgent": "緊急",
+      "highest": "最高",
+      "high": "高",
+      "medium": "中",
+      "low": "低い",
+      "lowest": "最低"
+    },
+    "buttons": {
+      "send": "送信",
+      "cancel": "キャンセル"
+    },
+    "departments": {
+      "general": "経営全般 ",
+      "hr": "人事部",
+      "tech": "技術部 ",
+      "quality": "品質部 ",
+      "development": " 開発部 "
+    },
+    "invalidForm": "フォームが無効です。必須項目をすべて入力してください。"
+  },
+  "addAdministrativeDocument": {
+    "modalTitle": "管理文書",
+    "buttonTitle": "管理文書を作成",
+    "successMessage": "管理文書が正常に作成されました",
+    "confirmSend": "管理文書を作成すると、変更することはできません。進む前にすべての情報を注意深く確認してください。",
+    "confirmSendTitle": "管理文書作成の確認",
+    "buttons": {
+      "send": "送信",
+      "cancel": "キャンセル"
+    },
+    "invalidForm": "フォームが無効です。必須項目をすべて入力してください。"
+  },
+  "administrativeDocuments": {
+    "pageTitle": "管理文書"
+  },
+  "editRequest": {
+    "requestDetails": "リクエストの詳細",
+    "modalTitle": "リクエストの編集",
+    "documentApprover": "文書承認者",
+    "createdBy": "作成者",
+    "status": "ステータス",
+    "includeQrCode": "QRコードを含める",
+    "selectApproverPlaceholder": "文書承認者を選択",
+    "confirmUpdateTitle": "リクエストの更新",
+    "confirmUpdateMessage": "リクエストを更新すると、元に戻すことはできません。進む前にすべての情報を注意深く確認してください。",
+    "successMessage": "リクエストが正常に更新されました"
+  },
+  "assignRequest": {
+    "modalTitle": "リクエストの割り当て",
+    "documentApprover": "文書承認者",
+    "assignBtn": "割り当てる",
+    "cancelBtn": "キャンセル",
+    "successMessage": "リクエストが正常に割り当てられた",
+    "assignModalBtn": "リクエストの割り当て",
+    "confirmAssignTitle": "リクエストの割り当て",
+    "confirmAssignMessage": "この署名者を割り当ててよろしいですか？一旦割り当てられると、その署名者にはメールが送信され、リクエストの編集はできなくなります。"
+  },
+  "uploadSignedPdf": {
+    "loading": "読み込み中 ...",
+    "modalTitle": "署名入り文書のアップロード",
+    "uploadFile": "署名入り文書のアップロード",
+    "uploadBtn": "アップロード",
+    "cancelBtn": "キャンセル",
+    "uploadModalBtn": "ファイルのアップロード",
+    "successMessage": "ドキュメントは正常にアップロードされました ",
+    "confirmUploadTitle": "文書のアップロードを確認する",
+    "confirmUploadMessage": "最終署名文書としてアップロードしてよろしいですか？",
+    "uploadFileError": "無効なファイル形式です。pdfファイルをアップロードしてください。"
+  },
+  "uploadDechargePdf": {
+    "loading": "読み込み中 ...",
+    "modalTitle": "免責文書をアップロード",
+    "uploadFile": "免責文書をアップロード",
+    "uploadBtn": "アップロード",
+    "cancelBtn": "キャンセル",
+    "uploadModalBtn": "ファイルのアップロード",
+    "successMessage": "ドキュメントは正常にアップロードされました ",
+    "confirmUploadTitle": "文書のアップロードを確認する",
+    "confirmUploadMessage": "この文書を最終的な免責文書としてアップロードしますか？",
+    "uploadFileError": "無効なファイル形式です。.pdf、.png、.jpg、または.jpegファイルをアップロードしてください。"
+  },
+  "usersList": {
+    "pageTitle": "ユーザーリスト",
+    "actions": "行動",
+    "status": "ステータス",
+    "employeeId": "従業員ID",
+    "mobile": "電話番号",
+    "department": "部門",
+    "email": "電子メール",
+    "fullName": "名前と姓",
+    "syncButton": "同期",
+    "loading": "読み込み中",
+    "404": "何もデータが見つかりませんでした.",
+    "confirmDeleteTitle": "削除確認",
+    "confirmDeleteMessage": "このユーザーを削除することを確認してください。",
+    "confirmButton": "確認する",
+    "cancelButton": "キャンセル",
+    "deleteSuccess": "ユーザーは正常に削除されました",
+    "enabled": "非アクティブ化 ",
+    "disabled": "アクティブ",
+    "addButton": "ユーザー追加"
+  },
+  "signersPage": {
+    "pageTitle": "署名者リスト",
+    "fullName": "名前と姓",
+    "department": "部門",
+    "signature": "署名",
+    "noSignature": "署名なし",
+    "actions": "アクション",
+    "name": "名前",
+    "404": "署名者が見つかりませんでした",
+    "uploadSignature": "署名をアップロード"
+  },
+  "signatureModal": {
+    "title": "署名をアップロード",
+    "description": "ユーザーの署名をアップロードする (PNG, JPG, JPEG)",
+    "uploadBtn": "アップロード",
+    "cancelBtn": "キャンセル",
+    "loading": "読み込み中 ...",
+    "successMessage": "署名が正常にアップロードされました",
+    "uploadFileError": "無効なファイル形式です。png、jpg、jpegファイルをアップロードしてください。",
+    "confirmUploadTitle": "署名のアップロードを確認",
+    "confirmUploadMessage": "この署名をアップロードしてもよろしいですか？"
+  },
+  "addPlaceholder": {
+    "title": "プレースホルダーを追加",
+    "placeholderInputName": "プレースホルダー名を入力",
+    "name": "プレースホルダー名",
+    "labels": "ラベル",
+    "add": "追加",
+    "cancel": "キャンセル",
+    "successMessage": "プレースホルダーが正常に追加されました",
+    "selectOrCreateLabels": "ラベルを選択または作成する",
+    "addButton": "プレースホルダーの追加"
+  },
+  "editPlaceholder": {
+    "title": "プレースホルダーを編集",
+    "placeholderInputName": "プレースホルダー名を入力",
+    "name": "プレースホルダー名",
+    "labels": "ラベル",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "successMessage": "プレースホルダーが正常に更新されました",
+    "selectOrCreateLabels": "ラベルを選択または作成"
+  },
+  "placeholderList": {
+    "pageTitle": "プレースホルダー一覧",
+    "actions": "アクション",
+    "name": "名前",
+    "404": "プレースホルダーが見つかりませんでした。",
+    "labels": "ラベル",
+    "deleteSuccess": "プレースホルダーの削除に成功.",
+    "deleteError": "削除するプレースホルダーが選択されていない"
+  },
+  "pagination": {
+    "nextPage": "次へ",
+    "prevPage": "前へ"
+  },
+  "requestList": {
+    "document": "ドキュメント",
+    "createdBy": "作成者",
+    "createdFor": "作成者",
+    "requestDate": "リクエスト日",
+    "status": "ステータス",
+    "documentApprover": "文書承認者",
+    "priority": "優先度",
+    "noDataFound": " リクエストなし",
+    "workflowPlaceholder": "ワークフローを表示するには、リクエストを選択してください。",
+    "tabs": {
+      "myRequests": "マイリクエスト",
+      "myAssignedRequests": "私のリクエスト",
+      "requestsToReview": "レビューするリクエスト"
+    }
+  },
+  "document": {
+    "name": "資料",
+    "404": "該当文書なし"
+  },
+  "configureTemplate": {
+    "pageTitle": "テンプレートの設定",
+    "placeholders": "プレースホルダー",
+    "userFields": "ユーザーフィールド",
+    "documentContent": "文書内容",
+    "select": "カテゴリーを選択 ",
+    "buttons": {
+      "goBack": "戻る",
+      "configureQrCode": "QRコードを設定"
+    },
+    "selectLabels": "1つ以上のラベルを選択",
+    "chooseLabelsToFilter": "プレースホルダーをフィルタリングするためのラベルを選択するか、'すべて選択'を選択してください。",
+    "retrieveAll": "すべて選択"
+  },
+  "configureQrCode": {
+    "pageTitle": "QRコードの設定",
+    "dragInstruction": "QRコードをPDF上の希望の位置にドラッグし、続行するにはボタンをクリックしてください。",
+    "errorLoadingPdf": "PDFの読み込み中にエラーが発生しました",
+    "buttons": {
+      "goBack": "戻る",
+      "finish": "完了"
+    },
+    "successToast": "QRコードの位置が保存されました"
+  },
+  "pdfOverlay": {
+    "modalHeader": "ページを選択",
+    "modalDescription": "画像を配置するページを選択してください。",
+    "selectPage": "ページを選択",
+    "selectPageInfo": "署名を配置したいページを選択してください。",
+    "dragAndSelectPageInfo": "下のページを選択し、画像を希望の位置にドラッグします。",
+    "dragInfo": "画像をドキュメント上の希望の位置にドラッグしてください。",
+    "confirm": "確認",
+    "goBack": "戻る",
+    "saveAndReturnPosition": "位置を保存",
+    "loading": "PDFを読み込み中...",
+    "page": "ページ",
+    "submitting": "送信中...",
+    "stopResizing": "サイズ変更を停止",
+    "resizeImage": "画像のサイズを変更"
+  },
+  "qrCodePlacement": {
+    "modalTitle": "QRコードの配置を選択",
+    "modalDescription": "ドキュメントにQRコードを配置する方法を選択してください",
+    "allPages": "すべてのページ",
+    "allPagesDesc": "ドキュメントのすべてのページにQRコードを挿入",
+    "specificPage": "特定のページ",
+    "specificPageDesc": "QRコードのための単一ページを選択",
+    "confirmButton": "確認"
+  },
+  "errors": {
+    "noResponseReceived": "ネットワークエラー：応答がありません。バックエンドサーバーがオフラインのようです。後でもう一度お試しください。",
+    "validation": "検証エラー",
+    "unauthorized": "認証されていません",
+    "forbidden": "アクセスが禁止されています",
+    "somethingWentWrong": "何かがうまくいきませんでした",
+    "dataNotFound": "データが見つかりません",
+    "conflict": "競合"
+  },
+  "generateDocument": {
+    "pageTitle": "ドキュメントの作成",
+    "userName": "ユーザー名",
+    "documentType": "文書タイプ",
+    "requestN": "リクエスト番号",
+    "dateCreation": "作成日",
+    "documentContent": "文書内容",
+    "confirmGenerateTitle": "ドキュメントの生成を確認します。",
+    "confirmGenerateMessage": "このドキュメントを生成してもよろしいですか？ 一度生成すると、そのフィールドを更新できなくなります。",
+    "buttons": {
+      "goBack": "戻る",
+      "generate": "生成"
+    }
+  },
+  "validateRequest": {
+    "buttons": {
+      "reject": "拒否",
+      "approve": "承認"
+    },
+    "successMessage": "リクエストが正常に承認されました。",
+    "rejectedMessage": "リクエストが拒否されました。",
+    "modalTitle": "リクエストの確認",
+    "noPdfAvailable": "ファイルがありません",
+    "errorFetchingPdf": "ファイル取得エラー",
+    "summaryError": "要約の生成に失敗しました",
+    "viewOriginal": "オリジナル文書を表示",
+    "viewSummary": "AI要約を表示",
+    "noSummary": "ドキュメントの要約を生成",
+    "noSummaryDesc": "このドキュメントのAI駆動の要約を取得して、主要な内容と重要な詳細を迅速に理解します。",
+    "generateSummary": "要約を生成",
+    "summarizing": "ドキュメントを分析中...",
+    "summarizingDesc": "ドキュメントの内容を処理および分析している間、しばらくお待ちください",
+    "retryGeneration": "再試行",
+    "summaryErrorTitle": "要約の生成に失敗しました",
+    "digitalSignature": {
+      "title": "デジタル署名が必要です",
+      "description": "検証を進める前に、デジタル署名の位置とサイズを設定する必要があります。",
+      "promptTitle": "デジタル署名の設定",
+      "promptDescription": "このリクエストを検証する前に、デジタル署名が文書に表示される位置を設定する必要があります。",
+      "configureSignatureBtn": "署名の位置を設定",
+      "continueValidation": "検証を続行"
+    },
+    "configureSignature": {
+      "pageTitle": "署名の設定",
+      "dragInstruction": "PDF上の希望の位置に署名をドラッグし、続行するにはボタンをクリックしてください。",
+      "successToast": "署名位置が保存されました"
+    }
+  },
+  "openValidateModal": {
+    "btn": "検証モーダルを開"
+  },
+  "generatePDF": {
+    "btn": "PDFを生成"
+  },
+  "errorPage": {
+    "errorTitle": "ページが見つかりません",
+    "errorDescription": "お探しのページは存在しないようです。",
+    "forbiddenTitle": "アクセスが拒否されました",
+    "forbiddenDescription": "このページにアクセスする権限がありません。これが間違いだと思われる場合は、管理者にお問い合わせください。",
+    "goToHomeBtn": "ホームへ戻る"
+  },
+  "downloadPDF": {
+    "btn": "ダウンロード",
+    "confirmDownloadTitle": "ダウンロードを確認します。",
+    "confirmDownloadMessage": "このファイルをダウンロードしてもよろしいですか? ?"
+  },
+  "ocrCompare": {
+    "title": "OCR文書比較",
+    "ocrCompare": "OCR文書比較",
+    "startOcrCompare": "OCR比較を開始",
+    "uploadScannedImages": "スキャンされた画像をアップロード",
+    "currentlyViewing": "現在表示中",
+    "dropImagesHere": "ここに画像をドロップしてください",
+    "clickOrDrag": "クリックまたは画像をドラッグしてください",
+    "dropzoneDisabled": "ドロップゾーンが無効です",
+    "scannedDocument": "スキャンされた文書",
+    "originalDocument": "オリジナル文書",
+    "uploadedImages": "アップロードされた画像",
+    "page": "ページ",
+    "backToView": "表示に戻る"
+  },
+  "languageManagement": {
+    "pageTitle": "言語の管理",
+    "addLanguageTitle": "新しい言語を追加",
+    "languageCode": "言語コード",
+    "codePlaceholder": "言語コードを入力",
+    "languageName": "言語名",
+    "namePlaceholder": "言語名を入力",
+    "addLanguage": "言語を追加",
+    "reset": "フォームをリセット",
+    "languagesList": "言語のリスト",
+    "actions": "アクション",
+    "noLanguages": "言語が見つかりません",
+    "deleteSuccess": "言語が正常に削除されました。",
+    "deleteError": "削除する言語が選択されていません。",
+    "addSuccess": "言語が正常に追加されました。",
+    "addLanguageMobile": "言語を追加"
+  }
+}

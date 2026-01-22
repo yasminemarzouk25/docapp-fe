@@ -1,0 +1,538 @@
+{
+  "forms": {
+    "email": {
+      "required": "Email is required",
+      "invalid": "Invalid email format"
+    },
+    "addPlaceholder": {
+      "name": {
+        "required": "Placeholder name is required",
+        "minLength": "Placeholder name must be at least {{length}} characters",
+        "maxLength": "Placeholder name must not exceed {{length}} characters"
+      }
+    },
+    "editPlaceholder": {
+      "name": {
+        "required": "Placeholder name is required",
+        "minLength": "Placeholder name must be at least {{length}} characters",
+        "maxLength": "Placeholder name must not exceed {{length}} characters"
+      }
+    },
+    "addRequest": {
+      "summary": {
+        "required": "Summary is required",
+        "minLength": "Summary must be at least {{length}} characters",
+        "maxLength": "Summary must not exceed {{length}} characters"
+      },
+      "description": {
+        "required": "Description is required",
+        "minLength": "Description must be at least {{length}} characters",
+        "maxLength": "Description must not exceed {{length}} characters"
+      },
+      "hrHandler": {
+        "required": "You must assign this request to an HR Member"
+      },
+      "department": {
+        "required": "Please select a department",
+        "invalid": "Invalid department selected"
+      },
+      "priority": {
+        "required": "Priority is required",
+        "min": "Priority must be at least 1",
+        "max": "Priority must not exceed 6"
+      },
+      "templateId": {
+        "required": "You need to select a template"
+      },
+      "signatureType": {
+        "required": "Signature type is required",
+        "invalid": "Invalid signature type selected"
+      }
+    },
+    "addAdministrativeDocument": {
+      "summary": {
+        "required": "Summary is required",
+        "minLength": "Summary must be at least {{length}} characters",
+        "maxLength": "Summary must not exceed {{length}} characters"
+      },
+      "createdFor": {
+        "required": "Please select a user"
+      },
+      "department": {
+        "required": "Please select a department",
+        "invalid": "Invalid department selected"
+      },
+      "priority": {
+        "required": "Priority is required",
+        "min": "Priority must be at least 1",
+        "max": "Priority must not exceed 6"
+      },
+      "templateId": {
+        "required": "You need to select a template"
+      }
+    },
+    "languageManagement": {
+      "code": {
+        "required": "Language code is required",
+        "pattern": "Invalid language code format"
+      },
+      "name": {
+        "required": "Language name is required",
+        "minLength": "Language name must be at least {{length}} characters",
+        "maxLength": "Language name must not exceed {{length}} characters"
+      }
+    }
+  },
+  "welcome": "Welcome to the Home Page",
+  "navbar": {
+    "requests": "Requests",
+    "documents": "Documents",
+    "users": "Users",
+    "signers": "Signers",
+    "logout": "Logout",
+    "language": "Language"
+  },
+  "sidebar": {
+    "home": "Home",
+    "myRequests": "My Requests",
+    "assignedRequests": "Assigned Requests",
+    "reviewRequests": "Requests to Review",
+    "configureTemplates": "Configure Templates",
+    "addTemplate": "Add Template",
+    "administrativeDocuments": "Administrative Documents",
+    "placeholders": "Placeholders",
+    "languages": "Languages",
+    "users": "Users",
+    "signers": "Signers"
+  },
+  "login": {
+    "loginToAccount": "Login to your account",
+    "welcomeMessage": "Streamline your document management workflow with our enterprise solution. Secure, efficient, and designed for your business needs.",
+    "accessRestricted": "Access is restricted to Azure AD members only.",
+    "signInWithMicrosoft": "Sign in with Microsoft",
+    "havingIssues": "Having issues?",
+    "contactSupport": "Contact support",
+    "unexpectedError": "An unexpected error occurred during the login process. Please try again later. If the issue persists, clear your browser cache/data."
+  },
+  "addUser": {
+    "firstName": "First name",
+    "lastName": "Last name",
+    "displayName": "Display Name",
+    "email": "Email",
+    "mobile": "Phone number",
+    "birthday": "Birthday",
+    "companyName": "Company",
+    "jobTitle": "Job title",
+    "department": "Department",
+    "country": "Country",
+    "state": "State",
+    "streetAddress": "Street address",
+    "postalCode": "Post Code",
+    "buttons": {
+      "save": "Save",
+      "update": "Update",
+      "cancel": "Cancel"
+    },
+    "sections": {
+      "personalInformation": "Personal Information",
+      "professionalDetails": "Professional Details",
+      "additionalInformation": "Additional Information"
+    },
+    "pageTitle": "Add User",
+    "successMessage": "User has been created successfully"
+  },
+  "addTemplate": {
+    "templateName": "Template Name",
+    "language": "Language",
+    "selectLanguage": "Select Language",
+    "templateRefNumber": "Template Reference Number",
+    "uploadFile": "Upload Template",
+    "dragDrop": "Drop the file here ...",
+    "pageTitle": "Add Template",
+    "addedSuccessfully": "Template Added Successfully",
+    "employeeRequestable": "Employee Requestable",
+    "employeeRequestableTooltip": "When enabled, all employees can request this template. When disabled, only HR members can generate documents from this template.",
+    "buttons": {
+      "save": "Save",
+      "validate": "Validate file",
+      "reset": "Reset"
+    },
+    "uploadContent": "Drag and drop some files here, or click to select files",
+    "addTemplateConstraints": "Guidelines: \n - Must contain at least one placeholder.\n- Placeholders must:\n  - Only contain letters (a-z, A-Z), numbers (0-9), or underscores (_).\n  - Not start with an underscore (_) or a number.\n  - Not contain spaces.\n  - Ensure brackets [] are correctly used with no unclosed brackets.\n  - Placeholders should be written inside [].",
+    "uploadFileError": "Invalid file type. Please upload a .docx file.",
+    "detectedPlaceholders": "Detected Placeholders",
+    "fileIsValid": "File is valid. You can now save the template."
+  },
+  "workflowProgress": {
+    "created": "Request created",
+    "generated": "Document generated by HR",
+    "inReview": "Under review",
+    "signed": "Document signed",
+    "scanned": "Document scanned",
+    "collected": "You collected the document",
+    "review": "Review"
+  },
+  "requestModal": {
+    "priority": "Priority",
+    "description": "Description",
+    "typeDocument": "Type of document",
+    "hrHandler": "Assigned To",
+    "createdFor": "Created For",
+    "summary": "Summary",
+    "status": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected"
+    },
+    "signatureType": "Signature Type",
+    "handSignature": "Hand Signature",
+    "digitalSignature": "Digital Signature",
+    "cancelBtn": "Cancel",
+    "saveBtn": "Save"
+  },
+  "addRequest": {
+    "requestTitle": "Add Request",
+    "editRequestBtn": "Edit Request",
+    "department": "Department",
+    "departmentPlaceholder": "Choose a department",
+    "priority": "Priority",
+    "priorityPlaceholder": "Select priority",
+    "successMessage": "Request has been created successfully",
+    "confirmSend": "Once a request is created, it cannot be updated. Please review all information carefully before proceeding.",
+    "confirmSendTitle": "Confirm Request Creation",
+    "priorityOptions": {
+      "urgent": "Urgent",
+      "highest": "Highest",
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low",
+      "lowest": "Lowest"
+    },
+    "buttons": {
+      "send": "Send",
+      "cancel": "Cancel"
+    },
+    "departments": {
+      "general": "General Management ",
+      "hr": " HR Department ",
+      "tech": "Technical Department ",
+      "quality": " Quality Department ",
+      "development": " Development Department "
+    },
+    "invalidForm": "Invalid form. Please fill in all required fields."
+  },
+  "addAdministrativeDocument": {
+    "modalTitle": "Administrative Document",
+    "buttonTitle": "Create Administrative Document",
+    "successMessage": "Administrative document has been created successfully",
+    "confirmSend": "Once an administrative document is created, it cannot be updated. Please review all information carefully before proceeding.",
+    "confirmSendTitle": "Confirm Administrative Document Creation",
+    "buttons": {
+      "send": "Send",
+      "cancel": "Cancel"
+    },
+    "invalidForm": "Invalid form. Please fill in all required fields."
+  },
+  "administrativeDocuments": {
+    "pageTitle": "Administrative Documents"
+  },
+  "editRequest": {
+    "requestDetails": "Request Details",
+    "modalTitle": "Edit Request",
+    "documentApprover": "Document Approver",
+    "createdBy": "Created by",
+    "status": "Status",
+    "includeQrCode": "Include QR Code",
+    "selectApproverPlaceholder": "Select document approver",
+    "confirmUpdateTitle": "Update request",
+    "confirmUpdateMessage": "Once a request is updated, it cannot be reverted. Please review all information carefully before proceeding.",
+    "successMessage": "Request has been updated successfully"
+  },
+  "assignRequest": {
+    "modalTitle": "Assign Request",
+    "documentApprover": "Document Approver",
+    "assignBtn": "Assign",
+    "cancelBtn": "Cancel",
+    "successMessage": "Request assigned successfully",
+    "assignModalBtn": "Assign Request",
+    "confirmAssignTitle": "Assign Request",
+    "confirmAssignMessage": "Are you sure you want to assign this signer? Once assigned, they will receive an email, and you will no longer be able to edit the request."
+  },
+  "usersList": {
+    "pageTitle": "Users List",
+    "actions": "Actions",
+    "status": "Status",
+    "employeeId": "Employee ID",
+    "mobile": "Phone number",
+    "department": "Department",
+    "email": "Email",
+    "fullName": "Full Name",
+    "syncButton": "Sync",
+    "loading": "Loading",
+    "404": "No data found.",
+    "confirmDeleteTitle": "Delete Confirmation",
+    "confirmDeleteMessage": "Please confirm that you wish to delete  ",
+    "confirmButton": "Confirm",
+    "cancelButton": "Cancel",
+    "deleteSuccess": "User has been deleted successfully.",
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "addButton": "Add User"
+  },
+  "signersPage": {
+    "pageTitle": "Signers List",
+    "fullName": "Full Name",
+    "department": "Department",
+    "signature": "Signature",
+    "noSignature": "No Signature",
+    "actions": "Actions",
+    "name": "Name",
+    "404": "No signers found",
+    "uploadSignature": "Upload Signature"
+  },
+  "signatureModal": {
+    "title": "Upload Signature",
+    "description": "Upload signature of the user (PNG, JPG, JPEG)",
+    "uploadBtn": "Upload",
+    "cancelBtn": "Cancel",
+    "loading": "Loading ...",
+    "successMessage": "Signature uploaded successfully",
+    "uploadFileError": "Invalid file type. Please upload a .png, .jpg, or .jpeg file.",
+    "confirmUploadTitle": "Confirm Upload Signature",
+    "confirmUploadMessage": "Are you sure you want to upload this signature?"
+  },
+  "addPlaceholder": {
+    "title": "Add Placeholder",
+    "placeholderInputName": "Enter placeholder name",
+    "name": "Placeholder Name",
+    "labels": "Labels",
+    "add": "Add",
+    "cancel": "Cancel",
+    "successMessage": "Placeholder added successfully",
+    "selectOrCreateLabels": "Select or create labels",
+    "addButton": "Add Placeholder"
+  },
+  "editPlaceholder": {
+    "title": "Edit Placeholder",
+    "placeholderInputName": "Enter placeholder name",
+    "name": "Placeholder Name",
+    "labels": "Labels",
+    "save": "Save",
+    "cancel": "Cancel",
+    "successMessage": "Placeholder updated successfully",
+    "selectOrCreateLabels": "Select or create labels"
+  },
+  "placeholderList": {
+    "pageTitle": "Placeholder List",
+    "actions": "Actions",
+    "name": "Name",
+    "404": "No Placeholder found.",
+    "labels": "Labels",
+    "deleteSuccess": "Placeholder deleted successfully.",
+    "deleteError": "No placeholder selected for deletion"
+  },
+  "pagination": {
+    "nextPage": "Next",
+    "prevPage": "Previous"
+  },
+  "requestList": {
+    "document": "Document",
+    "createdBy": "Created By",
+    "createdFor": "Created For",
+    "requestDate": "Date",
+    "status": "Status",
+    "documentApprover": "Document Approver",
+    "priority": "Priority",
+    "noDataFound": "No request found",
+    "workflowPlaceholder": "Please select a request to view its workflow",
+    "tabs": {
+      "myRequests": "My Requests",
+      "myAssignedRequests": "My Assigned Requests",
+      "requestsToReview": "Requests to Review"
+    }
+  },
+  "document": {
+    "name": "Documents",
+    "404": "No documents found."
+  },
+  "configureTemplate": {
+    "pageTitle": "Configure Template",
+    "placeholders": "Placeholders",
+    "userFields": "User Fields",
+    "documentContent": "Document Content",
+    "select": "Select category",
+    "buttons": {
+      "goBack": "Go Back",
+      "configureQrCode": "Configure QR Code"
+    },
+    "selectLabels": "Select one or more Labels",
+    "chooseLabelsToFilter": "Choose labels to filter placeholders or select 'Retrieve All'.",
+    "retrieveAll": "Retrieve All"
+  },
+  "configureQrCode": {
+    "pageTitle": "Configure QR Code",
+    "dragInstruction": "Drag the QR code to your desired position on the PDF, then click the button to continue.",
+    "errorLoadingPdf": "Error loading PDF",
+    "buttons": {
+      "goBack": "Go Back",
+      "finish": "Finish"
+    },
+    "successToast": "QR code position saved"
+  },
+  "pdfOverlay": {
+    "modalHeader": "Select a Page",
+    "modalDescription": "Choose the page where you want to place the image.",
+    "selectPage": "Select page",
+    "selectPageInfo": "Select the page where you want to place your signature.",
+    "dragAndSelectPageInfo": "Select a page below, then drag the image to your desired position.",
+    "dragInfo": "Drag the image to your desired position on the document.",
+    "confirm": "Confirm",
+    "goBack": "Go Back",
+    "saveAndReturnPosition": "Save Position",
+    "loading": "Loading PDF...",
+    "page": "Page",
+    "submitting": "Submitting...",
+    "stopResizing": "Stop Resizing",
+    "resizeImage": "Resize Image"
+  },
+  "qrCodePlacement": {
+    "modalTitle": "Select QR Code Placement",
+    "modalDescription": "Choose how you want to place the QR code in your document",
+    "allPages": "All Pages",
+    "allPagesDesc": "Insert QR code on every page of the document",
+    "specificPage": "Specific Page",
+    "specificPageDesc": "Choose a single page for the QR code",
+    "confirmButton": "Confirm"
+  },
+  "errors": {
+    "noResponseReceived": "Network Error: No response received. Our backend server seems to be offline. Please try again later.",
+    "validation": "Validation Error",
+    "unauthorized": "Unauthorized",
+    "forbidden": "Access Forbidden",
+    "somethingWentWrong": "Something went wrong",
+    "dataNotFound": "Data not found",
+    "conflict": "Conflict"
+  },
+  "generateDocument": {
+    "pageTitle": "Generate Document",
+    "userName": "User Name",
+    "documentType": "Document Type ",
+    "requestN": "Request N°",
+    "dateCreation": "Creation Date",
+    "documentContent": "Document Content",
+    "confirmGenerateTitle": "Confirm Generate Document",
+    "confirmGenerateMessage": "Are you sure you want to generate this document? Once generated, you will no longer be able to update its fields.",
+    "buttons": {
+      "goBack": "Go Back",
+      "generate": "Generate"
+    }
+  },
+  "validateRequest": {
+    "buttons": {
+      "reject": "Reject",
+      "approve": "Approve"
+    },
+    "successMessage": "Request approved successfully.",
+    "rejectedMessage": "Request rejected.",
+    "modalTitle": "Validate Request",
+    "noPdfAvailable": "No File Available",
+    "errorFetchingPdf": "Error Fetching File",
+    "summaryError": "Failed to generate summary",
+    "viewOriginal": "View Original Document",
+    "viewSummary": "View AI Summary",
+    "noSummary": "Generate Document Summary",
+    "noSummaryDesc": "Get an AI-powered summary of this document to quickly understand its key contents and important details.",
+    "generateSummary": "Generate Summary",
+    "summarizing": "Analyzing Document...",
+    "summarizingDesc": "Please wait while we process and analyze the document content",
+    "retryGeneration": "Try Again",
+    "summaryErrorTitle": "Summary Generation Failed",
+    "digitalSignature": {
+      "title": "Digital Signature Required",
+      "description": "You need to configure the position and size of your digital signature before proceeding with validation.",
+      "promptTitle": "Configure Your Digital Signature",
+      "promptDescription": "Before we can validate this request, you need to set up where your digital signature will appear on the document.",
+      "configureSignatureBtn": "Configure Signature Position",
+      "continueValidation": "Continue to Validation"
+    },
+    "configureSignature": {
+      "pageTitle": "Configure Signature",
+      "dragInstruction": "Drag the signature to your desired position on the PDF, then click the button to continue.",
+      "successToast": "Signature position saved"
+    }
+  },
+  "openValidateModal": {
+    "btn": "Validate Modal"
+  },
+  "generatePDF": {
+    "btn": "Generate PDF"
+  },
+  "errorPage": {
+    "errorTitle": "Page not found",
+    "errorDescription": "The page you're looking for does not seem to exist",
+    "forbiddenTitle": "Access Denied",
+    "forbiddenDescription": "You don't have permission to access this page. Please contact your administrator if you believe this is an error.",
+    "goToHomeBtn": "Back to Home"
+  },
+  "downloadPDF": {
+    "btn": "Download",
+    "confirmDownloadTitle": "Confirm download.",
+    "confirmDownloadMessage": "Are you sure you want to download this file ?"
+  },
+  "uploadSignedPdf": {
+    "loading": "Loading ...",
+    "modalTitle": "Upload Signed Document",
+    "uploadFile": "Upload Signed Document",
+    "uploadBtn": "Upload",
+    "cancelBtn": "Cancel",
+    "uploadModalBtn": "Upload Document",
+    "successMessage": "Document uploaded successfully ",
+    "confirmUploadTitle": "Confirm Upload Document",
+    "confirmUploadMessage": "Are you sure you want to upload this as a final signed document ?",
+    "uploadFileError": "Invalid file type. Please upload a .pdf file"
+  },
+  "uploadDechargePdf": {
+    "loading": "Loading ...",
+    "modalTitle": "Upload Decharge Document",
+    "uploadFile": "Upload Decharge Document",
+    "uploadBtn": "Upload",
+    "cancelBtn": "Cancel",
+    "uploadModalBtn": "Upload Decharge Document",
+    "successMessage": "Document uploaded successfully ",
+    "confirmUploadTitle": "Confirm Upload Document",
+    "confirmUploadMessage": "Are you sure you want to upload this as a final decharge document ?",
+    "uploadFileError": "Invalid file type. Please upload a .pdf, .png, .jpg, or .jpeg file"
+  },
+  "ocrCompare": {
+    "title": "OCR Document Comparison",
+    "ocrCompare": "OCR Compare",
+    "startOcrCompare": "Start OCR Compare",
+    "uploadScannedImages": "Upload Scanned Images",
+    "currentlyViewing": "Currently viewing",
+    "dropImagesHere": "Drop images here",
+    "clickOrDrag": "Click or drag images here",
+    "dropzoneDisabled": "Dropzone disabled",
+    "scannedDocument": "Scanned Document",
+    "originalDocument": "Original Document",
+    "uploadedImages": "Uploaded Images",
+    "page": "Page",
+    "backToView": "Back to View"
+  },
+  "languageManagement": {
+    "pageTitle": "Manage Languages",
+    "addLanguageTitle": "Add New Language",
+    "languageCode": "Language Code",
+    "codePlaceholder": "Enter language code",
+    "languageName": "Language Name",
+    "namePlaceholder": "Enter language name",
+    "addLanguage": "Add Language",
+    "reset": "Reset Form",
+    "languagesList": "Languages List",
+    "actions": "Actions",
+    "noLanguages": "No languages found",
+    "deleteSuccess": "Language deleted successfully.",
+    "deleteError": "No language selected for deletion",
+    "addSuccess": "Language added successfully.",
+    "addLanguageMobile": "Add "
+  }
+}

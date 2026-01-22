@@ -1,0 +1,538 @@
+{
+  "forms": {
+    "email": {
+      "required": "البريد الإلكتروني مطلوب",
+      "invalid": "تنسيق البريد الإلكتروني غير صالح"
+    },
+    "addPlaceholder": {
+      "name": {
+        "required": "اسم العنصر النائب مطلوب",
+        "minLength": "يجب أن يتكون اسم العنصر النائب من {{length}} أحرف على الأقل",
+        "maxLength": "يجب ألا يتجاوز اسم العنصر النائب {{length}} أحرف"
+      }
+    },
+    "editPlaceholder": {
+      "name": {
+        "required": "اسم العنصر النائب مطلوب",
+        "minLength": "يجب أن يتكون اسم العنصر النائب من {{length}} أحرف على الأقل",
+        "maxLength": "يجب ألا يتجاوز اسم العنصر النائب {{length}} أحرف"
+      }
+    },
+    "addRequest": {
+      "summary": {
+        "required": "الملخص مطلوب",
+        "minLength": "يجب أن يتكون الملخص من {{length}} أحرف على الأقل",
+        "maxLength": "يجب ألا يتجاوز الملخص {{length}} أحرف"
+      },
+      "description": {
+        "required": "الوصف مطلوب",
+        "minLength": "يجب أن يتكون الوصف من {{length}} أحرف على الأقل",
+        "maxLength": "يجب ألا يتجاوز الوصف {{length}} أحرف"
+      },
+      "hrHandler": {
+        "required": "يجب عليك تعيين هذا الطلب إلى عضو في قسم الموارد البشرية"
+      },
+      "department": {
+        "required": "يرجى اختيار قسم",
+        "invalid": "قسم غير صالح تم اختياره"
+      },
+      "priority": {
+        "required": "الأولوية مطلوبة",
+        "min": "يجب أن تكون الأولوية 1 على الأقل",
+        "max": "يجب ألا تتجاوز الأولوية 6"
+      },
+      "templateId": {
+        "required": "يجب عليك اختيار نموذج"
+      },
+      "signatureType": {
+        "required": "نوع التوقيع مطلوب",
+        "invalid": "نوع التوقيع المختار غير صالح"
+      }
+    },
+    "addAdministrativeDocument": {
+      "summary": {
+        "required": "الملخص مطلوب",
+        "minLength": "يجب أن يتكون الملخص من {{length}} أحرف على الأقل",
+        "maxLength": "يجب ألا يتجاوز الملخص {{length}} أحرف"
+      },
+      "createdFor": {
+        "required": "يرجى اختيار مستخدم"
+      },
+      "department": {
+        "required": "يرجى اختيار قسم",
+        "invalid": "قسم غير صالح تم اختياره"
+      },
+      "priority": {
+        "required": "الأولوية مطلوبة",
+        "min": "يجب أن تكون الأولوية 1 على الأقل",
+        "max": "يجب ألا تتجاوز الأولوية 6"
+      },
+      "templateId": {
+        "required": "يجب عليك اختيار نموذج"
+      }
+    },
+    "languageManagement": {
+      "code": {
+        "required": "رمز اللغة مطلوب",
+        "pattern": "تنسيق رمز اللغة غير صالح"
+      },
+      "name": {
+        "required": "اسم اللغة مطلوب",
+        "minLength": "يجب أن يتكون اسم اللغة من {{length}} أحرف على الأقل",
+        "maxLength": "يجب ألا يتجاوز اسم اللغة {{length}} أحرف"
+      }
+    }
+  },
+  "welcome": "أهلا بك في الصفحة الرئيسية",
+  "navbar": {
+    "requests": "الطلبات",
+    "documents": "الوثائق",
+    "users": "المستخدمين",
+    "signers": "الموقّعين",
+    "logout": "تسجيل الخروج",
+    "language": "اللغة"
+  },
+  "sidebar": {
+    "home": "الرئيسية",
+    "myRequests": "طلباتي",
+    "assignedRequests": "الطلبات المُسندة",
+    "reviewRequests": "طلبات للمراجعة",
+    "configureTemplates": "تكوين القوالب",
+    "addTemplate": "إضافة قالب",
+    "administrativeDocuments": "الوثائق الإدارية",
+    "placeholders": "العناصر النائبة",
+    "languages": "اللغات",
+    "users": "المستخدمين",
+    "signers": "الموقّعين"
+  },
+  "login": {
+    "loginToAccount": "تسجيل الدخول إلى حسابك",
+    "welcomeMessage": "قم بتبسيط سير عمل إدارة المستندات باستخدام حلّنا المؤسسي. آمن وفعّال ومصمّم لتلبية احتياجات عملك.",
+    "accessRestricted": "Azure AD تسجيل الدخول مسموح فقط لأعضاء",
+    "signInWithMicrosoft": "Microsoft تسجيل الدخول بواسطة",
+    "havingIssues": "هل تواجه مشكلة؟",
+    "contactSupport": "اتصل بالمساعدة",
+    "unexpectedError": "حدث خطأ غير متوقع أثناء عملية تسجيل الدخول. الرجاء المحاولة مرة أخرى لاحقًا. إذا استمرت المشكلة، قم بمسح ذاكرة التخزين المؤقت/البيانات في المتصفح."
+  },
+  "addUser": {
+    "firstName": "الاسم",
+    "lastName": "اسم العائلة",
+    "displayName": "الإسم و اللقب",
+    "email": "البريد الإلكتروني",
+    "mobile": "رقم الهاتف",
+    "birthday": "تاريخ الميلاد",
+    "companyName": "اسم الشركة",
+    "jobTitle": "المسمى الوظيفي",
+    "department": "القسم",
+    "country": "البلد",
+    "state": "الولاية",
+    "streetAddress": "عنوان الشارع",
+    "postalCode": "الرمز البريدي",
+    "buttons": {
+      "save": "حفظ",
+      "update": "تحديث",
+      "cancel": "إلغاء"
+    },
+    "sections": {
+      "personalInformation": "معلومات شخصية",
+      "professionalDetails": "تفاصيل مهنية",
+      "additionalInformation": "معلومات إضافية"
+    },
+    "pageTitle": "إضافة مستخدم",
+    "successMessage": "تم انشاء المستخدم بنجاح"
+  },
+  "addTemplate": {
+    "templateName": "اسم النموذج",
+    "language": "اللغة",
+    "selectLanguage": "اختر اللغة",
+    "templateRefNumber": "الرقم المرجعي للنموذج",
+    "uploadFile": "تحميل النموذج",
+    "dragDrop": "ضع الملف هنا ...",
+    "pageTitle": "إضافة نموذج",
+    "addedSuccessfully": "تم إضافة النموذج بنجاح",
+    "employeeRequestable": "قابل للطلب من قبل الموظفين",
+    "employeeRequestableTooltip": "عند التفعيل، يمكن لجميع الموظفين طلب هذا النموذج. عند التعطيل، يمكن فقط لأعضاء الموارد البشرية إنشاء مستندات من هذا النموذج.",
+    "buttons": {
+      "save": "حفظ",
+      "validate": "التحقق من صحة الملف",
+      "reset": "إلغاء"
+    },
+    "uploadContent": "اسحب وأفلت بعض الملفات هنا، أو انقر لتحديد الملفات.",
+    "addTemplateConstraints": "الإرشادات: \n - يجب أن يحتوي على على الأقل مكان للبيانات (placeholder).\n- الأماكن للبيانات (placeholders) يجب أن تكون فقط من الحروف (a-z, A-Z)، الأرقام (0-9)، أو الشرطة السفلية (_).\n- لا يجب أن تبدأ بشرطة سفلية (_) أو رقم.\n- لا يجب أن تحتوي على مسافات.\n- تأكد من استخدام الأقواس [] بشكل صحيح بدون أقواس غير مغلقة.\n- يجب أن تكتب الأماكن للبيانات (placeholders) داخل [].",
+    "uploadFileError": "نوع الملف غير صالح. يرجى تحميل ملف .docx",
+    "detectedPlaceholders": "العناصر النائبة التي تم اكتشافها",
+    "fileIsValid": "تم التحقق من صحة الملف. يمكنك الآن حفظ النموذج."
+  },
+  "workflowProgress": {
+    "created": "تم إنشاء الطلب",
+    "generated": "تم إنشاء المستند بواسطة عضو من الموارد البشرية",
+    "inReview": "قيد المراجعة",
+    "signed": "تم توقيع المستند ",
+    "scanned": "تم مسح المستند ضوئياً",
+    "collected": "لقد قمت بجمع المستند",
+    "review": "مراجعة"
+  },
+  "requestModal": {
+    "summary": "الملخص",
+    "description": "تفاصيل الطلب",
+    "priority": "الأولوية",
+    "typeDocument": "نوع الوثيقة",
+    "hrHandler": "المُسند إليه",
+    "createdFor": "تم إنشاؤها لـ",
+    "status": {
+      "pending": "قيد الانتظار",
+      "approved": "تمت الموافقة",
+      "rejected": "تم الرفض"
+    },
+    "signatureType": "نوع التوقيع",
+    "handSignature": "توقيع يدوي",
+    "digitalSignature": "توقيع رقمي",
+    "cancelBtn": "إلغاء",
+    "saveBtn": "حفظ"
+  },
+  "addRequest": {
+    "requestTitle": "إضافة طلب",
+    "editRequestBtn": "تعديل الطلب",
+    "department": "المصلحة",
+    "departmentPlaceholder": "اختر مصلحة",
+    "priority": "الأولوية",
+    "priorityPlaceholder": "اختر الأولوية",
+    "successMessage": "تم إنشاء الطلب بنجاح",
+    "confirmSend": "بمجرد إنشاء الطلب، لا يمكن تعديله. يرجى مراجعة جميع المعلومات بعناية قبل المتابعة.",
+    "confirmSendTitle": "تأكيد إنشاء الطلب",
+    "priorityOptions": {
+      "urgent": "عاجل",
+      "highest": "أعلى",
+      "high": "عالية",
+      "medium": "متوسط",
+      "low": "منخفضة",
+      "lowest": "أدنى"
+    },
+    "buttons": {
+      "send": "إرسال",
+      "cancel": "إلغاء"
+    },
+    "departments": {
+      "general": " الإدارة العامة",
+      "hr": "إدارة الموارد البشرية",
+      "tech": "الإدارة الفنية",
+      "quality": "إدارة الجودة ",
+      "development": " إدارة التطوير "
+    },
+    "invalidForm": "نموذج غير صالح. يرجى ملء جميع الحقول المطلوبة."
+  },
+  "addAdministrativeDocument": {
+    "modalTitle": "وثيقة إدارية",
+    "buttonTitle": "إنشاء وثيقة إدارية",
+    "successMessage": "تم إنشاء الوثيقة الإدارية بنجاح",
+    "confirmSend": "بمجرد إنشاء الوثيقة الإدارية، لا يمكن تعديلها. يرجى مراجعة جميع المعلومات بعناية قبل المتابعة.",
+    "confirmSendTitle": "تأكيد إنشاء الوثيقة الإدارية",
+    "buttons": {
+      "send": "إرسال",
+      "cancel": "إلغاء"
+    },
+    "invalidForm": "نموذج غير صالح. يرجى ملء جميع الحقول المطلوبة."
+  },
+  "administrativeDocuments": {
+    "pageTitle": "الوثائق الإدارية"
+  },
+  "editRequest": {
+    "requestDetails": "تفاصيل الطلب",
+    "modalTitle": "تعديل الطلب",
+    "documentApprover": "الموافق على المستند",
+    "createdBy": "تم إنشاؤها من قبل",
+    "status": "الحالة",
+    "includeQrCode": "تضمين رمز QR",
+    "selectApproverPlaceholder": "حدد موافق المستند",
+    "confirmUpdateTitle": "تحديث الطلب",
+    "confirmUpdateMessage": "بمجرد تحديث الطلب، لا يمكن التراجع. يرجى مراجعة جميع المعلومات بعناية قبل المتابعة.",
+    "successMessage": "تم تحديث الطلب بنجاح"
+  },
+  "assignRequest": {
+    "modalTitle": "تعيين الطلب",
+    "documentApprover": "الموافق على المستند",
+    "assignBtn": "تعيين",
+    "cancelBtn": "إلغاء",
+    "successMessage": "تم تعيين الطلب بنجاح ",
+    "assignModalBtn": "تعيين الطلب",
+    "confirmAssignTitle": "تعيين الطلب",
+    "confirmAssignMessage": "هل أنت متأكد من أنك تريد تعيين هذا الموقّع؟ بمجرد تعيينه، سيتلقى بريدًا إلكترونيًا، ولن تتمكن بعد ذلك من تعديل الطلب."
+  },
+  "uploadSignedPdf": {
+    "loading": "جاري الرفع ...",
+    "modalTitle": "رفع مستند موقّع",
+    "uploadFile": "رفع مستند موقّع",
+    "uploadBtn": "رفع",
+    "cancelBtn": "إلغاء",
+    "uploadModalBtn": "رفع الملف",
+    "successMessage": "تم رفع المستند بنجاح ",
+    "confirmUploadTitle": "تأكيد رفع المستند الموقّع",
+    "confirmUploadMessage": "هل تريد بالتأكيد رفع هذا كمستند موقّع نهائي؟",
+    "uploadFileError": "نوع الملف غير صالح. يرجى رفع ملف .pdf"
+  },
+  "uploadDechargePdf": {
+    "loading": "جاري الرفع ...",
+    "modalTitle": "رفع مستند إبراء الذمة",
+    "uploadFile": "رفع مستند إبراء الذمة",
+    "uploadBtn": "رفع",
+    "cancelBtn": "إلغاء",
+    "uploadModalBtn": "رفع الملف",
+    "successMessage": "تم رفع المستند بنجاح ",
+    "confirmUploadTitle": "تأكيد رفع مستند إبراء الذمة",
+    "confirmUploadMessage": "هل تريد بالتأكيد رفع هذا كمستند إبراء الذمة؟",
+    "uploadFileError": "نوع الملف غير صالح. يرجى رفع ملف .pdf أو .png أو .jpg أو .jpeg"
+  },
+  "usersList": {
+    "pageTitle": "قائمة المستخدمين",
+    "actions": "إجراءات",
+    "status": "حالة",
+    "employeeId": "ID رقم الموظف",
+    "mobile": "رقم الهاتف",
+    "department": "مصلحة",
+    "email": "بريد إلكتروني",
+    "fullName": "الاسم و اللقب",
+    "syncButton": "تحيين",
+    "loading": "جاري التحيين",
+    "404": "لم يتم العثور على أية بيانات",
+    "confirmDeleteTitle": "تأكيد الحذف",
+    "confirmDeleteMessage": " يرجى تأكيد رغبتك في حذف ",
+    "confirmButton": "تأكيد",
+    "cancelButton": "إلغاء",
+    "deleteSuccess": "تم حذف المستخدم بنجاح",
+    "enabled": "مفعل",
+    "disabled": "معطّل",
+    "addButton": "أضف مستخدم"
+  },
+  "signersPage": {
+    "pageTitle": "قائمة الموقّعين",
+    "fullName": "الاسم و اللقب",
+    "department": "المصلحة",
+    "signature": "التوقيع",
+    "noSignature": "لا يوجد توقيع",
+    "actions": "إجراءات",
+    "name": "الاسم",
+    "404": "لم يتم العثور على أي موقّع",
+    "uploadSignature": "تحميل التوقيع"
+  },
+  "signatureModal": {
+    "title": "تحميل التوقيع",
+    "description": "تحميل توقيع المستخدم (PNG, JPG, JPEG)",
+    "uploadBtn": "تحميل",
+    "cancelBtn": "إلغاء",
+    "loading": "جاري التحميل ...",
+    "successMessage": "تم تحميل التوقيع بنجاح",
+    "uploadFileError": "نوع الملف غير صالح. يرجى تحميل ملف .png, .jpg، أو .jpeg",
+    "confirmUploadTitle": "تأكيد تحميل التوقيع",
+    "confirmUploadMessage": "هل أنت متأكد أنك تريد تحميل هذا التوقيع؟"
+  },
+  "addPlaceholder": {
+    "title": "إضافة عنصر نائِب",
+    "placeholderInputName": "أدخل اسم العنصر النائب",
+    "name": "اسم العنصر النائب",
+    "labels": "التسميات",
+    "add": "إضافة",
+    "cancel": "إلغاء",
+    "successMessage": "تمت إضافة العنصر النائب بنجاح",
+    "selectOrCreateLabels": "اختيار التسميات أو إنشائها",
+    "addButton": "إضافة عنصر نائِب"
+  },
+  "editPlaceholder": {
+    "title": "تعديل العنصر النائب",
+    "placeholderInputName": "أدخل اسم العنصر النائب",
+    "name": "اسم العنصر النائب",
+    "labels": "التسميات",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "successMessage": "تم تحديث العنصر النائب بنجاح",
+    "selectOrCreateLabels": "اختر أو أنشئ تسميات"
+  },
+  "placeholderList": {
+    "pageTitle": "قائمة العناصر النائبة",
+    "actions": "إجراءات",
+    "name": "اسم",
+    "404": "لم يتم العثور على عنصر نائب",
+    "labels": "التسميات",
+    "deleteSuccess": "تم حذف العنصر النائب بنجاح",
+    "deleteError": "لم يتم تحديد عنصر نائب للحذف"
+  },
+  "pagination": {
+    "nextPage": "الصفحة التالية",
+    "prevPage": "الصفحة السابقة"
+  },
+  "requestList": {
+    "document": "الوثيقة",
+    "createdBy": "تم إنشاؤها مِن قِبل",
+    "createdFor": "تم إسنادها إلى",
+    "requestDate": "التاريخ",
+    "status": "الحالة",
+    "documentApprover": "الموافق على المستند",
+    "priority": "الأولوية",
+    "noDataFound": " لا توجد طلبات",
+    "workflowPlaceholder": "اختر طلباً للاطلاع على وضعه",
+    "tabs": {
+      "myRequests": "طلباتي",
+      "myAssignedRequests": "طلباتي المخصصة لي",
+      "requestsToReview": "طلبات للمراجعة "
+    }
+  },
+  "document": {
+    "name": "الوثائق",
+    "404": "لا يوجد وثيقة موجودة"
+  },
+  "configureTemplate": {
+    "pageTitle": "تهيئة النموذج",
+    "placeholders": "العناصر النائبة",
+    "userFields": "خانات المستخدم",
+    "documentContent": "محتوى الوثيقة",
+    "select": "اختر الفئة",
+    "buttons": {
+      "goBack": "الرجوع",
+      "configureQrCode": "تهيئة رمز QR"
+    },
+    "selectLabels": "اختر تسمية أو أكثر",
+    "chooseLabelsToFilter": "'اختر تسميات لتصفية العناصر النائبة أو اختر 'تحديد الكل",
+    "retrieveAll": "تحديد الكل"
+  },
+  "configureQrCode": {
+    "pageTitle": "تهيئة رمز QR",
+    "dragInstruction": "اسحب رمز QR إلى الموضع المطلوب على ملف PDF، ثم انقر على الزر للمتابعة.",
+    "errorLoadingPdf": "خطأ في تحميل ملف PDF",
+    "buttons": {
+      "goBack": "الرجوع",
+      "finish": "إنهاء"
+    },
+    "successToast": "تم حفظ موضع رمز QR"
+  },
+  "pdfOverlay": {
+    "modalHeader": "اختر صفحة",
+    "modalDescription": "اختر الصفحة التي تريد وضع الصورة عليها.",
+    "selectPage": "اختر الصفحة",
+    "selectPageInfo": "اختر الصفحة التي تريد وضع توقيعك عليها.",
+    "dragAndSelectPageInfo": "اختر صفحة أدناه، ثم اسحب الصورة إلى الموضع المطلوب.",
+    "dragInfo": "اسحب الصورة إلى الموضع المطلوب على المستند.",
+    "confirm": "تأكيد",
+    "goBack": "الرجوع",
+    "saveAndReturnPosition": "حفظ الموضع",
+    "loading": "جاري تحميل PDF...",
+    "page": "الصفحة",
+    "submitting": "جاري الإرسال...",
+    "stopResizing": "إيقاف تغيير الحجم",
+    "resizeImage": "تغيير حجم الصورة"
+  },
+  "qrCodePlacement": {
+    "modalTitle": "اختر موضع رمز QR",
+    "modalDescription": "اختر كيف تريد وضع رمز QR في مستندك",
+    "allPages": "جميع الصفحات",
+    "allPagesDesc": "إدراج رمز QR في كل صفحة من المستند",
+    "specificPage": "صفحة محددة",
+    "specificPageDesc": "اختر صفحة واحدة لرمز QR",
+    "confirmButton": "تأكيد"
+  },
+  "errors": {
+    "noResponseReceived": "خطأ في الشبكة: لم يتم تلقي أي استجابة. يبدو أن خادمنا الخلفي غير متصل. يرجى المحاولة مرة أخرى لاحقًا.",
+    "validation": "خطأ في التحقق",
+    "unauthorized": "غير مصرح بالدخول",
+    "forbidden": "الوصول ممنوع",
+    "somethingWentWrong": "حدث خطأ ما",
+    "dataNotFound": "لم يتم العثور على البيانات",
+    "conflict": "تعارض"
+  },
+  "generateDocument": {
+    "pageTitle": "إنشاء الوثيقة",
+    "userName": "اسم المستخدم",
+    "documentType": "نوع الوثيقة",
+    "requestN": "رقم الطلب",
+    "dateCreation": "تاريخ الإنشاء",
+    "documentContent": "محتوى الوثيقة",
+    "confirmGenerateTitle": "تأكيد إنشاء الوثيقة",
+    "confirmGenerateMessage": "هل أنت متأكد أنك تريد إنشاء هذا المستند؟ بمجرد إنشائه، لن تتمكن من تحديث حقوله بعد ذلك.",
+    "buttons": {
+      "goBack": "الرجوع",
+      "generate": "إنشاء"
+    }
+  },
+  "validateRequest": {
+    "buttons": {
+      "reject": "رفض",
+      "approve": "موافقة"
+    },
+    "successMessage": "تمت الموافقة على الطلب بنجاح.",
+    "rejectedMessage": "تم رفض الطلب.",
+    "modalTitle": "تحقق من الطلب",
+    "noPdfAvailable": "لا يتوفر أي ملف",
+    "errorFetchingPdf": "خطأ في إحضار الملف",
+    "summaryError": "فشل في إنشاء الملخص",
+    "viewOriginal": "عرض المستند الأصلي",
+    "viewSummary": "عرض ملخص الذكاء الاصطناعي",
+    "noSummary": "توليد ملخص الوثيقة",
+    "noSummaryDesc": "احصل على ملخص مدعوم بالذكاء الاصطناعي لهذا المستند لفهم محتوياته الرئيسية وتفاصيله المهمة بسرعة.",
+    "generateSummary": "توليد الملخص",
+    "summarizing": "تحليل المستند...",
+    "summarizingDesc": "يرجى الانتظار بينما نقوم بمعالجة وتحليل محتوى المستند",
+    "retryGeneration": "حاول مرة أخرى",
+    "summaryErrorTitle": "فشل في إنشاء الملخص",
+    "configureSignature": {
+      "pageTitle": "تهيئة التوقيع",
+      "dragInstruction": "اسحب التوقيع إلى الموضع المطلوب على ملف PDF، ثم انقر على الزر للمتابعة.",
+      "successToast": "تم حفظ موضع التوقيع"
+    },
+    "digitalSignature": {
+      "title": "التوقيع الرقمي مطلوب",
+      "description": "يجب عليك تكوين موضع وحجم توقيعك الرقمي قبل المتابعة مع التحقق.",
+      "promptTitle": "تكوين توقيعك الرقمي",
+      "promptDescription": "قبل أن نتمكن من التحقق من هذه الطلب، تحتاج إلى إعداد مكان ظهور توقيعك الرقمي على المستند.",
+      "configureSignatureBtn": "تكوين موضع التوقيع",
+      "continueValidation": "متابعة التحقق"
+    }
+  },
+  "openValidateModal": {
+    "btn": " نافذة التحقق"
+  },
+  "generatePDF": {
+    "btn": "إنشاء PDF"
+  },
+  "errorPage": {
+    "errorTitle": "الصفحة غير موجودة",
+    "errorDescription": "يبدو أن الصفحة التي تبحث عنها غير موجودة",
+    "forbiddenTitle": "تم رفض الوصول",
+    "forbiddenDescription": "ليس لديك إذن للوصول إلى هذه الصفحة. يرجى الاتصال بالمسؤول إذا كنت تعتقد أن هذا خطأ.",
+    "goToHomeBtn": "العودة إلى الصفحة الرئيسية"
+  },
+  "downloadPDF": {
+    "btn": "تحميل",
+    "confirmDownloadTitle": "تأكيد التنزيل",
+    "confirmDownloadMessage": "هل أنت متأكد أنك تريد تنزيل هذا الملف ؟"
+  },
+  "ocrCompare": {
+    "title": "مقارنة مستندات OCR",
+    "ocrCompare": "مقارنة OCR",
+    "startOcrCompare": "بدء مقارنة OCR",
+    "uploadScannedImages": "تحميل الصور الممسوحة ضوئيًا",
+    "currentlyViewing": "عرض حاليًا",
+    "dropImagesHere": "اسحب الصور هنا",
+    "clickOrDrag": "انقر أو اسحب الصور هنا",
+    "dropzoneDisabled": "Dropzone معطلة",
+    "scannedDocument": "المستند الممسوح ضوئيًا",
+    "originalDocument": "المستند الأصلي",
+    "uploadedImages": "الصور المرفوعة",
+    "page": "الصفحة",
+    "backToView": "العودة إلى العرض"
+  },
+  "languageManagement": {
+    "pageTitle": "إدارة اللغات",
+    "addLanguageTitle": "إضافة لغة جديدة",
+    "languageCode": "رمز اللغة",
+    "codePlaceholder": "أدخل رمز اللغة",
+    "languageName": "اسم اللغة",
+    "namePlaceholder": "أدخل اسم اللغة",
+    "addLanguage": "إضافة لغة",
+    "reset": "إعادة تعيين النموذج",
+    "languagesList": "قائمة اللغات",
+    "actions": "الإجراءات",
+    "noLanguages": "لا توجد لغات",
+    "deleteSuccess": "تم حذف اللغة بنجاح.",
+    "deleteError": "لم يتم تحيد أي لغة للحذف.",
+    "addSuccess": "تمت إضافة اللغة بنجاح.",
+    "addLanguageMobile": "أضف اللغة"
+  }
+}
